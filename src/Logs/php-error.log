@@ -1,6 +1,1 @@
-[23-Oct-2021 00:56:47 America/Lima] PHP Warning:  array_rand(): Array is empty in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
-[23-Oct-2021 00:56:47 America/Lima] PHP Notice:  Undefined index:  in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
-[23-Oct-2021 00:58:45 America/Lima] PHP Warning:  array_rand(): Array is empty in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
-[23-Oct-2021 00:58:45 America/Lima] PHP Notice:  Undefined index:  in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
-[23-Oct-2021 01:02:06 America/Lima] PHP Warning:  array_rand(): Array is empty in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
-[23-Oct-2021 01:02:06 America/Lima] PHP Notice:  Undefined index:  in C:\laragon\www\apis\bins_su\src\config\CurlX.php on line 421
+
