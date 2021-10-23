@@ -29,14 +29,11 @@ if (empty($bin)) {
   // Search bin
   $fim = ScrapperBin::Search($bin);
   
-  if ($fim['sucess'] == false || $fim['status'] =='error') {
-    echo json_encode($fim);
-
-  } else {
+  if ($fim['sucess'] == true && $fim['status'] =='ok') {
     $fim['result']['flag'] = getFlag($fim['result']['country']);
-    echo json_encode($fim);
-    
+
   }
+  echo json_encode($fim);
   
   exit;
 }
