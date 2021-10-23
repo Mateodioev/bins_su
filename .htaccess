@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+#RewriteRule ^([a-z]+)/?$ $1.php [NC]
+
+
+</IfModule>
+
+
+RewriteEngine On
+Options All -Indexes
+
+#prevenir acceso al archivo .htaccess
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+#URL amigable con un solo parametro
+RewriteRule ^([0-9a-zA-Z-_@./]+)$ index.php?bin=$1 [QSA]
