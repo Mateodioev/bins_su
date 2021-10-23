@@ -28,8 +28,15 @@ if (empty($bin)) {
 } else {
   // Search bin
   $fim = ScrapperBin::Search($bin);
-  $fim['result']['flag'] = getFlag($fim['result']['country']);
+  
+  if ($fim['sucess'] == false || $fim['status'] =='error') {
+    echo json_encode($fim);
 
-  echo json_encode($fim);
+  } else {
+    $fim['result']['flag'] = getFlag($fim['result']['country']);
+    echo json_encode($fim);
+    
+  }
+  
   exit;
 }
