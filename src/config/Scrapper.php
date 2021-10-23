@@ -25,11 +25,12 @@ class ScrapperBin {
    * Obtener proxys de un archivo .txt
    */
   private static function GetProxys($use = false) {
-    $proxy_user = CurlX::GetRandVal(self::$proxy_file);
-
+    
     if (!$use) {
       return null;
     }
+    
+    $proxy_user = CurlX::GetRandVal(self::$proxy_file);
     if (empty($proxy_user)) {
       return null;
 
